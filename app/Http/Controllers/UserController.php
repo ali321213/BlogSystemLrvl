@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class UserController extends Controller
@@ -46,5 +46,37 @@ class UserController extends Controller
     public function destroy(string $id)
     {
         //
+    }
+
+
+    public function addUser(Request $request)
+    {
+        $request->validate([
+            'name' => 'required|string|max:255',
+            'email' => 'required|email|unique:users,email',
+            'phone_number' => 'required|string|max:15',
+            'gender' => 'required|string|in:male,female',
+            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+        ]);
+        $imagePath = $request->file('image')->store('uploads', 'public');
+        $user = User::create([
+            'name' => $request->name,
+            'email' => $request->email,
+            'phone_number' => $request->phone_number,
+            'gender' => $request->gender,
+            'image' => $imagePath,
+        ]);
+        return response()->json($user);
+    }
+
+    public function showUsers(Request $request)
+    {
+        $users = User::all();
+        return response()->json($users);
+    }
+
+    public function dashboard()
+    {
+        return view('template.header');
     }
 }
