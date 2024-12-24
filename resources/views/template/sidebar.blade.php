@@ -20,12 +20,100 @@
                 <i class="mdi mdi-home menu-icon"></i>
             </a>
         </li>
+
         <li class="nav-item">
-            <a class="nav-link" href="{{ url('products/index') }}" aria-expanded="false"
-                aria-controls="ui-basic">
-                <span class="menu-title">Products</span>
+            <a class="nav-link collapsed" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+                <span class="menu-title">Catalog</span>
+                <i class="menu-arrow"></i>
                 <i class="mdi mdi-crosshairs-gps menu-icon"></i>
             </a>
+            <div class="collapse" id="ui-basic">
+                <ul class="nav flex-column sub-menu">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url('product/index') }}">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url('category/index') }}">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url('units/index') }}">Units</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url('product/index') }}">Brands</a>
+                    </li>
+                </ul>
+            </div>
         </li>
+
+        <li class="nav-item">
+            <a class="nav-link collapsed" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+                <span class="menu-title">Catalog</span>
+                <i class="menu-arrow"></i>
+                <i class="mdi mdi-crosshairs-gps menu-icon"></i>
+            </a>
+            <div class="collapse" id="ui-basic">
+                <ul class="nav flex-column sub-menu">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url('product/index') }}">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url('category/index') }}">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url('units/index') }}">Units</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url('product/index') }}">Brands</a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link collapsed" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+                <span class="menu-title">Catalog</span>
+                <i class="menu-arrow"></i>
+                <i class="mdi mdi-crosshairs-gps menu-icon"></i>
+            </a>
+            <div class="collapse" id="ui-basic">
+                <ul class="nav flex-column sub-menu">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url('product/index') }}">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url('category/index') }}">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url('units/index') }}">Units</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url('product/index') }}">Brands</a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+
+
+        <li class="nav-item">
+            <a class="nav-link collapsed" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+                <span class="menu-title">Reporting</span>
+                <i class="menu-arrow"></i>
+                <i class="mdi mdi-crosshairs-gps menu-icon"></i>
+            </a>
+            <div class="collapse" id="ui-basic">
+                <ul class="nav flex-column sub-menu">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url('product/index') }}">Sales</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url('category/index') }}">Customers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url('units/index') }}">Products</a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+
     </ul>
 </nav>

@@ -1,0 +1,242 @@
+php artisan serve
+php artisan make:model unit -m
+php artisan make:model brand -m
+php artisan make:model users -m
+php artisan make:model store -m
+php artisan make:model category -m
+php artisan make:controller categoryController
+php artisan migrate:fresh
+php artisan migrate --seed
+
+php artisan make:controller BrandsController --resource
+
+________________________________________________
+
+--:Data Base Tables:--
+Table Name = Units
+| Name
+____________________________________________________________
+
+Table Name = Brands
+Table Entities:-
+| Name
+____________________________________________________________
+
+Table Name =  Categories
+Table Entities:-
+| Name
+____________________________________________________________
+
+Table Name = Products
+Table Entities:-
+| Name | Price | Brand | Unit | Category | Supplier |
+____________________________________________________________
+
+Table Name = Suppliers
+Table Entities:-
+| Name | Phone Number | Address | 
+____________________________________________________________
+
+| Stock In By Vendor | Return bu AHL | Return bu BlueX  |
+____________________________________________________________
+
+
+List of tables and their key entities/fields:
+1. Users
+For managing system users and roles:-
+- name: User name.
+- email: User email (unique).
+- password
+- role: Role of the user (e.g., admin, manager).
+- created_at/updated_at: Timestamps
+
+
+2. Products
+To store information about the products in inventory:-
+- name: Product name.
+- sku: Stock Keeping Unit (unique identifier).
+- description: Product description.
+- price: Product price.
+- quantity: Stock quantity.
+- unit: Unit of measurement (e.g., pieces, kg).
+- brand_id: Foreign key to brands table.
+- category_id: Foreign key to categories table.
+- created_at/updated_at: Timestamps
+
+
+3. Categories
+To categorize products:-
+- name: Category name.
+- description: Category description (optional).
+- created_at/updated_at: Timestamps
+
+
+4. Brands
+For managing product brands:-
+- name: Brand name.
+- created_at/updated_at: Timestamps
+
+
+5. Suppliers
+To manage suppliers of products:-
+- name: Supplier name.
+- contact_person: Contact person.
+- phone: Phone number.
+- email: Email address.
+- address: Supplier address.
+- created_at/updated_at: Timestamps
+
+
+6. Customers
+To track customers for sales:-
+- name: Customer name.
+- email: Email address.
+- phone: Phone number.
+- address: Customer address.
+- created_at/updated_at: Timestamps
+
+
+7. Purchases
+To manage inventory stock purchases:-
+- supplier_id: Foreign key to suppliers table.
+- purchase_date: Date of purchase.
+- total_amount: Total amount of purchase.
+- status: Status of the purchase (e.g., pending, completed).
+- created_at/updated_at: Timestamps
+
+
+8. Purchase_Items
+To track individual items in a purchase:-
+- purchase_id: Foreign key to purchases table.
+- product_id: Foreign key to products table.
+- quantity: Quantity purchased.
+- price: Price per unit.
+- total: Total price (quantity * price).
+- created_at/updated_at: Timestamps
+
+
+9. Sales
+To manage sales transactions:-
+- customer_id: Foreign key to customers table.
+- sale_date: Date of sale.
+- total_amount: Total sale amount.
+- status: Sale status (e.g., pending, completed).
+- created_at/updated_at: Timestamps
+
+
+10. Sale_Items
+To track individual items sold in a transaction:-
+- sale_id: Foreign key to sales table.
+- product_id: Foreign key to products table.
+- quantity: Quantity sold.
+- price: Price per unit.
+- total: Total price (quantity * price).
+- created_at/updated_at: Timestamps
+
+
+11. Stock_Adjustments
+To record manual stock adjustments:-
+- product_id: Foreign key to products table.
+- adjustment_type: Type of adjustment (e.g., addition, subtraction).
+- quantity: Quantity adjusted.
+- reason: Reason for adjustment.
+- created_at/updated_at: Timestamps
+
+
+12. Inventories
+To track current stock levels:-
+- product_id: Foreign key to products table.
+- quantity: Current quantity in stock.
+- created_at/updated_at: Timestamps
+
+
+13. Warehouses
+For multi-warehouse support:-
+- name: Warehouse name.
+- location: Warehouse location.
+- created_at/updated_at: Timestamps
+
+
+14. Stock_Transfers
+To manage stock transfers between warehouses:-
+- from_warehouse_id: Source warehouse (foreign key).
+- to_warehouse_id: Destination warehouse (foreign key).
+- product_id: Foreign key to products table.
+- quantity: Quantity transferred.
+- transfer_date: Date of transfer.
+- created_at/updated_at: Timestamps
+
+________________________________________________________________________________________________________________________________________________
+
+Here’s a detailed breakdown of your services with a professional tone, tailored for your e-commerce company website:
+
+1. E-Commerce Store Management
+We take the hassle out of running your e-commerce store. Our expert team provides end-to-end management, ensuring your store operates seamlessly and achieves its maximum potential. Our services include:
+- Inventory management to avoid stockouts or overstocking.
+- Order fulfillment and customer service to ensure smooth operations.
+- SEO-optimized product listings to enhance discoverability.
+- Regular performance monitoring and reporting to keep you informed.
+- Personalized strategies to boost sales and grow your store.
+
+
+2. TikTok Top-Ups
+Stay ahead in the social media game with our TikTok top-up services. We provide a secure and hassle-free solution for businesses and influencers looking to boost their campaigns. Features include:
+- Quick and seamless top-ups to your TikTok balance.
+- Assistance in running and optimizing ad campaigns for maximum ROI.
+- Expert insights on creating engaging and high-performing content.
+
+
+3. 3PL Services
+We offer reliable Third-Party Logistics (3PL) services to streamline your supply chain. Our 3PL solutions include:
+- Inventory storage and warehousing.
+- Order picking, packing, and shipping for efficient fulfillment.
+- Real-time tracking and delivery updates for peace of mind.
+- Reverse logistics to handle returns and refunds with ease.
+Let us handle your logistics so you can focus on growing your business.
+
+
+4. Product Photography/Creative Shooting
+High-quality visuals are key to capturing customer attention. Our creative photography services ensure your products stand out with:
+- Professional product shoots highlighting details and aesthetics.
+- Lifestyle shots that showcase your products in real-world settings.
+- Editing and retouching for a polished, professional look.
+- Photography tailored to platforms like Amazon, eBay, and Shopify to meet their guidelines.
+
+
+5. Web Development
+We build websites that don’t just look great but perform flawlessly. Our web development services include:
+- Fully responsive e-commerce sites optimized for desktop and mobile.
+- User-friendly navigation and design for an excellent customer experience.
+- Integration with payment gateways and inventory management systems.
+- Custom functionalities tailored to your business needs.
+- Maintenance and support to keep your website running smoothly.
+
+
+6. E-Commerce Trainings
+Empower yourself with our comprehensive e-commerce training programs. Learn to:
+- Create, manage, and scale Shopify, Amazon, and eBay stores.
+- Identify profitable products, niches, and suppliers.
+- Optimize listings for SEO to drive organic traffic.
+- Analyze and interpret sales data for better decision-making.
+Whether you're a beginner or looking to sharpen your skills, our expert-led training programs have you covered.
+
+
+7. Digital Marketing
+Reach your target audience and convert clicks into sales with our cutting-edge digital marketing strategies. Our services include:
+- SEO optimization to improve your search engine rankings.
+- Social media management to build and engage your online community.
+- Pay-per-click (PPC) campaigns for quick and effective traffic generation.
+- Email marketing to retain customers and increase repeat sales.
+- Data-driven insights and analytics for continuous improvement.
+
+
+8. LLC, LTD, E-Commerce Store Creation, Bank Account Creations
+We simplify the process of setting up and running your business:
+- Assistance in forming LLCs or LTDs for legal business operations.
+- Creation of professional e-commerce stores tailored to your niche.
+- Guidance in opening local and international bank accounts to support your business transactions.
+- Expert advice on compliance and regulatory requirements for hassle-free operations.
+
+Your website visitors will clearly understand the value you offer through these detailed descriptions. This professional presentation builds trust and positions your company as an expert in the industry.
+
+data-aos="fade-right" data-aos-offset="400" data-aos-easing="ease-in-sine"

@@ -4,16 +4,17 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>Purple Admin</title>
+    <title>Products</title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="{{ asset('assets/vendors/mdi/css/materialdesignicons.min.css') }}">
     <link rel="stylesheet" href="{{ asset('/css/bootstrap-5.0.2/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/vendors/css/vendor.bundle.base.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
     <!-- End layout styles -->
-    <link rel="shortcut icon" href="{{ asset('assets/images/favicon.ico') }}">
+    <link rel="icon" href="{{ asset('images/favicon.png') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.datatables.net/2.1.8/css/dataTables.bootstrap5.css">
+    <!-- DataTables CSS -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
 </head>
 
 <body>
@@ -21,8 +22,10 @@
         <!-- partial:partials/_navbar.html -->
         <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
             <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-                <a class="navbar-brand brand-logo" href="index.html"><img src="{{ asset('assets/images/logo.svg') }}" alt="logo" /></a>
-                <a class="navbar-brand brand-logo-mini" href="index.html"><img src="{{ asset('assets/images/logo-mini.svg') }}" alt="logo" /></a>
+                <a class="navbar-brand brand-logo" href="index.html"><img src="{{ asset('assets/images/logo.svg') }}"
+                        alt="logo" /></a>
+                <a class="navbar-brand brand-logo-mini" href="index.html"><img
+                        src="{{ asset('assets/images/logo-mini.svg') }}" alt="logo" /></a>
             </div>
             <div class="navbar-menu-wrapper d-flex align-items-stretch">
                 <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
@@ -34,7 +37,8 @@
                             <div class="input-group-prepend bg-transparent">
                                 <i class="input-group-text border-0 mdi mdi-magnify"></i>
                             </div>
-                            <input type="text" class="form-control bg-transparent border-0" placeholder="Search projects" />
+                            <input type="text" class="form-control bg-transparent border-0"
+                                placeholder="Search projects" />
                         </div>
                     </form>
                 </div>
@@ -66,8 +70,8 @@
                         </a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link count-indicator dropdown-toggle" id="messageDropdown" href="#" data-bs-toggle="dropdown"
-                            aria-expanded="false">
+                        <a class="nav-link count-indicator dropdown-toggle" id="messageDropdown" href="#"
+                            data-bs-toggle="dropdown" aria-expanded="false">
                             <i class="mdi mdi-email-outline"></i>
                             <span class="count-symbol bg-warning"></span>
                         </a>
@@ -77,9 +81,11 @@
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item preview-item">
                                 <div class="preview-thumbnail">
-                                    <img src="{{ asset('assets/images/faces/face4.jpg') }}" alt="image" class="profile-pic" />
+                                    <img src="{{ asset('assets/images/faces/face4.jpg') }}" alt="image"
+                                        class="profile-pic" />
                                 </div>
-                                <div class="preview-item-content d-flex align-items-start flex-column justify-content-center">
+                                <div
+                                    class="preview-item-content d-flex align-items-start flex-column justify-content-center">
                                     <h6 class="preview-subject ellipsis mb-1 font-weight-normal">
                                         Mark send you a message
                                     </h6>
@@ -89,9 +95,11 @@
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item preview-item">
                                 <div class="preview-thumbnail">
-                                    <img src="{{ asset('assets/images/faces/face2.jpg') }}" alt="image" class="profile-pic" />
+                                    <img src="{{ asset('assets/images/faces/face2.jpg') }}" alt="image"
+                                        class="profile-pic" />
                                 </div>
-                                <div class="preview-item-content d-flex align-items-start flex-column justify-content-center">
+                                <div
+                                    class="preview-item-content d-flex align-items-start flex-column justify-content-center">
                                     <h6 class="preview-subject ellipsis mb-1 font-weight-normal">
                                         Cregh send you a message
                                     </h6>
@@ -101,9 +109,11 @@
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item preview-item">
                                 <div class="preview-thumbnail">
-                                    <img src="{{ asset('assets/images/faces/face3.jpg') }}" alt="image" class="profile-pic" />
+                                    <img src="{{ asset('assets/images/faces/face3.jpg') }}" alt="image"
+                                        class="profile-pic" />
                                 </div>
-                                <div class="preview-item-content d-flex align-items-start flex-column justify-content-center">
+                                <div
+                                    class="preview-item-content d-flex align-items-start flex-column justify-content-center">
                                     <h6 class="preview-subject ellipsis mb-1 font-weight-normal">
                                         Profile picture updated
                                     </h6>
@@ -130,7 +140,8 @@
                                         <i class="mdi mdi-calendar"></i>
                                     </div>
                                 </div>
-                                <div class="preview-item-content d-flex align-items-start flex-column justify-content-center">
+                                <div
+                                    class="preview-item-content d-flex align-items-start flex-column justify-content-center">
                                     <h6 class="preview-subject font-weight-normal mb-1">
                                         Event today
                                     </h6>
@@ -146,7 +157,8 @@
                                         <i class="mdi mdi-settings"></i>
                                     </div>
                                 </div>
-                                <div class="preview-item-content d-flex align-items-start flex-column justify-content-center">
+                                <div
+                                    class="preview-item-content d-flex align-items-start flex-column justify-content-center">
                                     <h6 class="preview-subject font-weight-normal mb-1">
                                         Settings
                                     </h6>
@@ -160,7 +172,8 @@
                                         <i class="mdi mdi-link-variant"></i>
                                     </div>
                                 </div>
-                                <div class="preview-item-content d-flex align-items-start flex-column justify-content-center">
+                                <div
+                                    class="preview-item-content d-flex align-items-start flex-column justify-content-center">
                                     <h6 class="preview-subject font-weight-normal mb-1">
                                         Launch Admin
                                     </h6>
@@ -199,89 +212,34 @@
                     </div>
                     <div class="col-lg-4 text-center">
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-info d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#AddProductModal">
+                        <button type="button" class="btn btn-info d-flex align-items-center" data-bs-toggle="modal"
+                            data-bs-target="#AddProductModal">
                             <i class="mdi mdi-plus-circle me-2"></i> Add Products
                         </button>
-
                     </div>
                     <div class="col-lg-4 text-center">
-                    </div>
-                </div>
-                <div class="row mt-5">
-                    <!-- Data Tables -->
-                    <div class="col-lg-12">
-                        <table id="example" class="table table-striped text-center" style="width:100%">
-                            <thead>
-                                <tr>
-                                    <th>Name</th>
-                                    <th>Price</th>
-                                    <th>Total Stock</th>
-                                    <th>Stock In By Vendor</th>
-                                    <th>Return By AHL</th>
-                                    <th>Return By BlueX</th>
-                                    <th>Created At</th>
-                                    <th>Updated At</th>
-                                    <th>Action</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Tiger Nixon</td>
-                                    <td>System Architect</td>
-                                    <td>Edinburgh</td>
-                                    <td>61</td>
-                                    <td>2011-04-25</td>
-                                    <td>$320,800</td>
-                                    <td>$320,800</td>
-                                    <td>$320,800</td>
-                                    <td>
-                                        <button class="btn btn-info">Edit</button>
-                                        <button class="btn btn-danger">Delete</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Garrett Winters</td>
-                                    <td>Accountant</td>
-                                    <td>Tokyo</td>
-                                    <td>63</td>
-                                    <td>2011-07-25</td>
-                                    <td>$170,750</td>
-                                    <td>$170,750</td>
-                                    <td>$170,750</td>
-
-                                    <td>
-                                        <button class="btn btn-info">Edit</button>
-                                        <button class="btn btn-danger">Delete</button>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="col-lg-12 my-5">
-                        <h2>Laravel DataTables Example</h2>
-                        <table class="table table-bordered" id="products-table">
+                        <table class="table table-bordered text-center text-capitalize" id="products-table">
                             <thead>
-                                <tr>
+                                <tr class="fw-bolder">
                                     <th>Name</th>
-                                    <th>Price</th>
-                                    <th>Total Stock</th>
-                                    <th>Stock In By Vendor</th>
-                                    <th>Return By AHL</th>
-                                    <th>Return By BlueX</th>
+                                    <th>Image</th>
                                     <th>Created At</th>
                                     <th>Updated At</th>
                                     <th>Action</th>
                                 </tr>
                             </thead>
+                            <tbody id="products-body"></tbody>
                         </table>
                     </div>
                 </div>
             </div>
 
-            <!-- Modal -->
+            <!-- Add Product Modal -->
             <div class="modal fade" id="AddProductModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
@@ -291,7 +249,8 @@
                         </div>
                         <div class="message"></div>
                         <div class="modal-body">
-                            <form id="addProductForm" action="javascript:void(0)" method="post" enctype="multipart/form-data">
+                            <form id="addProductForm" action="javascript:void(0)" method="post"
+                                enctype="multipart/form-data">
                                 @csrf
                                 <div class="mb-3">
                                     <input type="text" class="form-control" name="name" placeholder="Name">
@@ -306,9 +265,17 @@
                                 <div class="mb-3">
                                     <select class="form-select" name="brand">
                                         <option value="">Select Brand</option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
+                                        <option value="Rajab">Rajab</option>
+                                        <option value="J.">J.</option>
+                                        <option value="Kashees">Kashees</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <select class="form-select" name="category">
+                                        <option value="">Select Category</option>
+                                        <option value="makeup">makeup</option>
+                                        <option value="perfumes">perfumes</option>
+                                        <option value="shampoo">shampoo</option>
                                     </select>
                                 </div>
                                 <div class="mb-3">
@@ -320,7 +287,67 @@
                                     </select>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="submit" class="btn btn-primary">Save</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Update Product Modal -->
+            <div class="modal fade" id="updateProductModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5 fw-bold">Update Product</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="message"></div>
+                        <div class="modal-body">
+                            <form id="updateProductForm" action="javascript:void(0)" method="post"
+                                enctype="multipart/form-data">
+                                @csrf
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" name="name" placeholder="Name">
+                                </div>
+
+                                <div class="mb-3">
+                                    <input type="file" class="form-control" name="img">
+                                </div>
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" name="price" placeholder="Price">
+                                </div>
+                                <div class="mb-3">
+                                    <select class="form-select" name="brand">
+                                        <option value="">Select Brand</option>
+                                        <option value="Rajab">Rajab</option>
+                                        <option value="J.">J.</option>
+                                        <option value="Kashees">Kashees</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <select class="form-select" name="category">
+                                        <option value="">Select Category</option>
+                                        <option value="makeup">makeup</option>
+                                        <option value="perfumes">perfumes</option>
+                                        <option value="shampoo">shampoo</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <select class="form-select" name="unit">
+                                        <option value="">Select Unit</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
                                     <button type="submit" class="btn btn-primary">Save</button>
                                 </div>
                             </form>
@@ -329,30 +356,83 @@
                 </div>
             </div>
         </div>
+
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <script>
-            $('#addProductForm').on('submit', function(e) {
+            getProducts();
+            // Function to Fetch & Display Products:-
+            function getProducts() {
+                $.ajax({
+                    url: '{{ route('product.fetchAll') }}',
+                    success: function (data) {
+                        let rows = '';
+                        if (data.length === 0) {
+                            // No products found
+                            rows = `
+                    <tr>
+                        <td colspan="9" class="text-center fw-semibold">No products available</td>
+                    </tr>`;
+                        } else {
+                            // Populate products
+                            data.forEach(product => {
+                                const imageUrl = `/../../storage/app/public/products/${product.img}`;
+                                rows += `
+                        <tr>
+                            <td>${product.name}</td>
+                            <td>${product.price}</td>
+                            <td><img src="${imageUrl}" alt="Product Image" width="50"></td>
+                            <td>${product.unit}</td>
+                            <td>${product.brand}</td>
+                            <td>${product.category}</td>
+                            <td>${product.created_at}</td>
+                            <td>${product.updated_at}</td>
+                            <td>
+                                <button class="btn btn-warning edit-product-btn" 
+                                    data-bs-toggle="modal" data-bs-target="#updateProductModal" 
+                                    data-id="${product.id}">Edit</button>
+                                <button class="btn btn-danger delete-product-btn" 
+                                    data-id="${product.id}">Delete</button>
+                            </td>
+                        </tr>`;
+                            });
+                        }
+                        $('#products-body').html(rows);
+                    },
+                    error: function (xhr, status, error) {
+                        console.error('Error fetching products:', error);
+                    }
+                });
+            }
+
+
+            $('#addProductForm').on('submit', function (e) {
                 e.preventDefault();
                 var formData = new FormData(this);
                 $.ajax({
-                    url: 'addProduct',
+                    url: '{{ route('product.store') }}',
                     method: 'POST',
                     data: formData,
                     processData: false,
                     contentType: false,
-                    success: function(response) {
+                    success: function (response) {
                         if (response === '1') {
                             alert("Product added successfully");
                             $('#AddProductModal').modal('hide');
-                            window.location.reload();
+                            // Manually remove the modal backdrop classes
+                            $('.modal-backdrop').remove();
+                            // $('.modal-backdrop').removeClass('fade show');
+                            // Optionally remove the backdrop element entirely
+                            // $('#addProductForm').reset[0];
+                            $("#addProductForm")[0].reset();
+                            getProducts();
                         } else {
                             alert("An error occurred while adding the product.");
                         }
                     },
-                    error: function(xhr) {
+                    error: function (xhr) {
                         if (xhr.status === 422) {
                             $('.message').html('<div class="alert alert-danger">Please fix the errors below:</div>');
-                            $.each(xhr.responseJSON.errors, function(key, value) {
+                            $.each(xhr.responseJSON.errors, function (key, value) {
                                 $('[name="' + key + '"]').after('<span class="text-danger">' + value + '</span>');
                             });
                         } else {
@@ -361,9 +441,71 @@
                     }
                 });
             });
-        </script>
 
-        <script src="{{ asset('assets/vendors/js/vendor.bundle.base.js') }}"></script>a
+
+            // Delete Product
+            $('#products-table').on('click', '.delete-product', function () {
+                var productId = $(this).data('id');
+                if (confirm('Are you sure you want to delete this product?')) {
+                    $.ajax({
+                        url: '/deleteProduct/' + productId, // URL for deleting the product
+                        method: 'DELETE',
+                        success: function (response) {
+                            if (response.success) {
+                                alert('Product deleted successfully');
+
+                            } else {
+                                alert('An error occurred while deleting the product.');
+                            }
+                        },
+                        error: function (xhr) {
+                            alert('An error occurred while deleting the product.');
+                        }
+                    });
+                }
+            });
+
+            $('#products-table').on('click', '.edit-product-btn', function () {
+                var productId = $(this).data('id');
+                $.ajax({
+                    url: '/getProduct/' + productId, // URL for fetching product details
+                    method: 'GET',
+                    success: function (response) {
+                        // Open a modal or fill a form to edit product details
+                        console.log(response);
+                    }
+                });
+            });
+
+            // Update PRoduct 
+            function updateProduct(id) {
+                let formData = new FormData();
+                formData.append('name', $('#name').val());
+                formData.append('img', $('#img')[0].files[0]);
+                formData.append('price', $('#price').val());
+                formData.append('brand', $('#brand').val());
+                formData.append('category', $('#category').val());
+                formData.append('unit', $('#unit').val());
+
+                $.ajax({
+                    url: `/products/update/${id}`,
+                    method: 'PUT',
+                    data: formData,
+                    processData: false,
+                    contentType: false,
+                    success: function (response) {
+                        alert(response.message);
+                        $('#updateProductModal').modal('hide');
+                        getProducts();
+                    },
+                    error: function (error) {
+                        console.error(error);
+                        alert('Error updating product!');
+                    }
+                });
+            }
+        </script>
+        <script src="{{ asset('assets/vendors/js/vendor.bundle.base.js') }}"></script>
         <script src="{{ asset('assets/vendors/chart.js/Chart.min.js') }}"></script>
         <script src="{{ asset('assets/js/jquery.cookie.js" type="text/javascript') }}"></script>
         <script src="{{ asset('assets/js/off-canvas.js') }}"></script>
@@ -372,10 +514,10 @@
         <script src="{{ asset('assets/js/dashboard.js') }}"></script>
         <script src="{{ asset('assets/js/todolist.js') }}"></script>
         <script src="{{ asset('/js/bootstrap.min.js') }}"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-        <script src="https://cdn.datatables.net/2.1.8/js/jquery.dataTables.min.js"></script>
-        <script src="https://cdn.datatables.net/2.1.8/js/dataTables.bootstrap5.min.js"></script>
         <script src="{{ asset('/css/bootstrap-5.0.2/js/bootstrap.bundle.min.js') }}"></script>
+        <!-- DataTables JS -->
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
 </body>
 
 </html>
